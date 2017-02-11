@@ -1,0 +1,23 @@
+
+{% extends "layout.html" %}
+{% block title %}home{% endblock %}
+{% block content %}
+<div class="container">
+ 	<h1 class="text-center">Connect Four</h1>
+	<h4 class="text-center">Your Highscore</h4>
+	<p class="text-center">{{ stats.highscore }}</p>
+	<table class="table" id="scoreTable">
+		<tr>
+			<td class="text-center">Wins</td>
+			<td class="text-center">loses</td>
+		</tr>
+		<tr>
+			<td class="text-center">{{ stats.wins }}</td>
+			<td class="text-center">{{ stats.loses }}</td>
+		</tr>
+	</table>
+</div>
+</div>
+<div class="col-md-6 col-md-offset-3">
+	<a class="btn btn-primary btn-lg btn-block" href="game">play</a>
+{% endblock %}

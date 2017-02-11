@@ -1,0 +1,20 @@
+{% extends "layout.html" %}
+{% block title %}Play{% endblock %}
+{% block head %}{{ super() }}<script type="text/javascript" src="{{ url_for('static', filename='js/socket.io-1.4.5.js') }}"></script>{% endblock %}
+{% block content %}
+	<img id="body" src="{{ url_for('static', filename='images/body.svg') }}" style="display: none;">
+	<img id="g" src="{{ url_for('static', filename='images/green_chip.svg') }}" style="display: none;">
+	<img id="r" src="{{ url_for('static', filename='images/red_chip.svg') }}" style="display: none;">
+	<div class="container" id="space">
+		<div id="newgame">
+			<input class='btn btn-lg btn-success' type='button' value='play first' onclick='newgame()'/>
+			<input class='btn btn-lg btn-success' type='button' value='play second' onclick='newgame("C")' />
+		</div>
+	</div>
+	<div class="container">
+		<canvas id="myCanvas" width="700" height="700"></canvas>
+		<script src="{{ url_for('static', filename='js/game.js') }}"></script>
+	</div>
+	<form action="game" method="POST" style="display: none;">
+	</form>
+{% endblock %}

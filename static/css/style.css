@@ -1,0 +1,19 @@
+#scoreTable {
+	max-width: 250px;
+	margin: auto;
+}
+body { padding-top: 50px; }
+.container
+{
+    /* center contents */
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+.form-control{
+	width:auto;
+	display: inline-block;
+}
+#space {
+	height:100px;
+}

@@ -1,0 +1,28 @@
+{% extends "layout.html" %}
+{% block title %}Login{% endblock %}
+{% block content %}
+<div class="container">
+    <h1>sign up</h1>
+    <form action="register" method="post">
+        <fieldset>
+            <div class="form-group">
+                <input autocomplete="off" autofocus class="form-control" name="username" placeholder="Username" type="text"/>
+            </div>
+            <div class="form-group">
+                <input class="form-control" name="password" placeholder="Password" type="password"/>
+            </div>
+            <div class="form-group">
+                <input class="form-control" name="confirmation" placeholder="retype password" type="password"/>
+            </div>
+            <div class="form-group">
+                <button class="btn btn-default" type="submit">
+                    sign up
+                </button>
+            </div>
+        </fieldset>
+    </form>
+    <div>
+        or <a class="btn btn-default btn-sm" href="login">log in</a>
+    </div>
+</div>
+{% endblock %}
