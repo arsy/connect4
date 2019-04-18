@@ -1,6 +1,6 @@
 appdirs==1.4.0
 click==6.7
-Flask==0.12
+flask>=0.12.3
 Flask-SocketIO==2.8.2
 itsdangerous==0.24
 Jinja2>=2.10.1
